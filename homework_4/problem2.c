@@ -14,7 +14,7 @@ int main()
     {       
         for (int j = 0; j < m; j++)
         {
-            if (j == i && j == i - m)
+            if (j == i)
             {
                 counter++;
                 if (counter == m)
