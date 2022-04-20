@@ -2,7 +2,7 @@
 
 int main()
 {
-    int x = 3;
+    int x = 10;
     int *p = (int*) &x;
 
     printf("Printing the address of x: %p\n", p);
