@@ -81,7 +81,17 @@ int main()
         }
         else if (strcmp(input, "quit") == 0)
         {
-            break;
+            char dname[256];
+            printf("Do you want to save to a file (y/n)?  ");
+            scanf("%256s", dname);
+            if (strcmp(dname, "y") == 0)
+            {
+                break;
+            }
+            else if (strcmp(dname, "n") == 0)
+            {
+                break;
+            }
         }  
     }
     return 0;
