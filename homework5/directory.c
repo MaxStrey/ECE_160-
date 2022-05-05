@@ -86,6 +86,23 @@ int main()
             scanf("%256s", dname);
             if (strcmp(dname, "y") == 0)
             {
+                FILE *fp;
+                fp = fopen( "file.txt" , "w" );
+                for (int i = 0; i < 20; i++)
+                {
+                    char str[1024];
+                    
+                    if (strcmp(directory[i].name, "-") != 0)
+                    {
+                        size_t end = sprintf(str, "%s\t%s\n", output_permissions(directory, i), directory[i].name);
+                        fwrite(str , 1 , end , fp );
+                    }
+                    
+                
+                }
+                
+                
+                fclose(fp);
                 break;
             }
             else if (strcmp(dname, "n") == 0)
