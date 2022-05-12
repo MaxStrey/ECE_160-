@@ -1,2 +1,2 @@
-r	yoyo
-rwx	jdklfjds
+w	yoyo
+rwx	redroses
